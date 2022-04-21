@@ -1,0 +1,31 @@
+{
+  "name": "mishita_project",
+  "version": "1.0.0",
+  "description": "web tech term project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "keywords": [
+    "crud",
+    "book",
+    "mongodb"
+  ],
+  "author": "Misita",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "dot": "^1.1.3",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "env": "^0.0.2",
+    "express": "^4.17.3",
+    "gtts": "^0.1.1",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
