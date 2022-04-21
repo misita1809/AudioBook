@@ -1,0 +1,75 @@
+<!-- // Submitted By:
+// Anjali Rakholiya (C0793400) Ayush Kumar Singh (C0799530)
+// Dashmeet Kaur (C0800265) Misita Sankhala (C0807324)
+// Parampreet Kaur Gill (C0796418) Tarun Dutt (C0784296) -->
+
+
+<!-- Include header-->
+<%- include('include/_header')%>
+<!-- /Include header-->
+
+<!--Main Site-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/admin/books"><i class="fas fa-angle-double-left"></i>Admin Books</a>
+            </div>
+        </div>
+        <div class="form_title text-center">
+            <h2 class="text-dark">Add New Book</h2>
+            <span class="text-light">Use the below form to add new book</span>
+            <!-- form handling -->
+        <!-- <form method="post" action="/adminsubmit" id="add_user"> -->
+        <form action="/book/update" method="post" id="add_user">
+            <div class="new_user">
+                <div class="form-group">
+                    <label for="id" class="text-light">Id</label>
+                    <input type="hidden" name="id" value="<%= upbook[0].id %>">
+                    <input type="text" name="id" value="<%= upbook[0].id %>" placeholder="000" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="title" class="text-light">title</label>
+                    <input type="text" name="title" value="<%= upbook[0].title %>" placeholder="The Nun">
+                </div>
+
+                <div class="form-group">
+                    <label for="author" class="text-light">author</label>
+                    <input type="text" name="author" value="<%= upbook[0].author %>" placeholder="Matt">
+                </div>
+
+                <div class="form-group">
+                    <label for="likes" class="text-light">likes</label>
+                    <input type="text" name="likes" value="<%= upbook[0].likes %>" placeholder="2300">
+                </div>
+
+                <div class="form-group">
+                    <label for="rating" class="text-light">rating</label>
+                    <input type="text" name="rating" value="<%= upbook[0].rating %>" placeholder="3.7">
+                </div>
+
+                <div class="form-group">
+                    <label for="categories" class="text-light">categories</label>
+                    <select name="categories" id="">
+                        <option value="Sc-If">Sc-If</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Thriller">Thriller</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Update</button>
+                </div>
+            </div>
+        </form>
+         <!-- /form handling -->
+        </div>   
+    </div>
+</main>
+<!--Main Site-->
+
+<!-- Include footer-->
+<%- include('include/_footer')%>
+<!-- /Include footer-->
